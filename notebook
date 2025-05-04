@@ -1,0 +1,20 @@
+mkdir ~/pentest-ai && cd ~/pentest-ai
+mkdir -p models logs scripts reports cve_database
+
+    models/: Guarda el modelo GGUF de DeepSeek.
+
+    logs/: Almacena logs de herramientas (Nmap, Burp Suite, etc.).
+
+    scripts/: Contiene los scripts de análisis (Python, bash).
+
+    reports/: Reportes generados en Markdown/PDF.
+
+    cve_database/: Base de datos local de CVEs (CSV/JSO
+
+# Actualizar sistema e instalar compiladores
+sudo apt update && sudo apt upgrade -y
+sudo apt install build-essential cmake python3 python3-pip git -y
+
+# Instalar llama.cpp (optimizado para CPU)
+git clone https://github.com/ggerganov/llama.cpp
+cd llama.cpp && make LLAMA_AVX2=1 -j $(nproc)  # Usa todos los núcleos del i9-14900K
