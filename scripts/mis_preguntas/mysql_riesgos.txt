@@ -1,0 +1,1 @@
+¿Qué riesgos hay en dejar MySQL sin contraseña?

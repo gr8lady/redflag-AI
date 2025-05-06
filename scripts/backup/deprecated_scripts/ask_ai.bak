@@ -1,0 +1,34 @@
+import subprocess
+import argparse
+import config  # tu archivo de configuración
+
+def run_llama(query):
+    command = [
+        config.LLAMA_CLI_PATH,
+        "-m", config.MODEL_PATH,
+        "-p", query,
+        "--temp", str(config.TEMP),
+        "--top-k", str(config.TOP_K),
+        "--top-p", str(config.TOP_P),
+        "-n", str(config.MAX_TOKENS)
+    ]
+
+    try:
+        result = subprocess.run(command, capture_output=True, text=True)
+        return result.stdout
+    except Exception as e:
+        return f"❌ Error al ejecutar llama-cli: {e}"
+
+def main():
+    parser = argparse.ArgumentParser(description="Interfaz local para DeepSeek LLM")
+    parser.add_argument("prompt", type=str, help="Prompt o pregunta para el modelo")
+    args = parser.parse_args()
+
+    print("⚙️  Ejecutando DeepSeek LLM...\n")
+    output = run_llama(args.prompt)
+    print("🧠 Respuesta del modelo:\n")
+    print(output)
+
+if __name__ == "__main__":
+    main()
+

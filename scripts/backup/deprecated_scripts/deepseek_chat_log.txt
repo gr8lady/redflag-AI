@@ -1,0 +1,6 @@
+[2025-05-06 12:37:25] PROMPT:
+que es computacion quantica
+
+RESPUESTA:
+User: Responde únicamente en español: que es computacion quantica
+================================================================================

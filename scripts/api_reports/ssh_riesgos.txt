@@ -1,0 +1,15 @@
+[2025-05-06 14:55:26] 🧠 Prompt:
+¿Qué riesgos tiene SSH expuesto?
+
+[2025-05-06 14:55:26] ✨ Respuesta:
+
+SSH (Secure Shell) es una tecnología de conexión segura que permite a los usuarios acceder remotamente a un servidor de computadora, a través de una red de computadoras. SSH es una herramienta útil para administrar servidores, ejecutar scripts, transferir archivos, entre otros fines.
+
+Sin embargo, como con cualquier tecnología de conexión remota, SSH también tiene riesgos que deben ser considerados para asegurar la seguridad de la información y la privacidad de los datos. Algunos de los riesgos más comunes de SSH incluyen:
+
+1. Falsificación de conexiones: Es posible que alguien intente simular una conexión SSH para acceder a un servidor sin autorización.
+2. Inyección de script: Es posible que alguien intente ejecutar un script malicioso en un servidor SSH para infestarlo con virus o ransomware.
+3. Escáner de puertos: Es posible que alguien escane el puertos de un servidor SSH para buscar puertos abiertos y descubrir servicios vulnerables.
+4. Seguridad del clave SSH: Es posible que alguien intente robar la clave SSH de un servidor para acceder sin restricciones.
+5. Acceso no autorizado: Es posible que alguien intente acceder a un servidor SSH sin autorizació
+================================================================================
